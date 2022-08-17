@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New CollectionPage</title>
-    <link rel="stylesheet" href="/trackHoursApp/css/style1.css">
+    <link rel="stylesheet" href="/css/style1.css">
 </head>
 <body>
    <div class="LogoPicture">IMAGE</div> 
@@ -14,17 +14,42 @@
     <div>Calendario</div>
 </header>
 <!--Botao/lista/selecao -Nesse botão deve abrir uma lista com nomes de opcoes de colecoes para selecionar. Deve ter uma opcao para adicionar o nome da colecao caso nao esteja na lista. E salvar-->
-<form action="">
-        <div id="selectCollection">Select Collection</div>
-        <!--Nessa div deve-se preencher com informacoes especificas de cada colecao.Um formulario talvez?-->
-        <div id="biscuitsInformation">
-            <input placeholder="BPH"  type="text">
-            <input placeholder="TINS" type="text">
-            <input placeholder="BISCUITS" type="text">
+        <div id="collectionHome">
+            <div id="selectCollection"> 
+                <form action="">
+                    <input type="newCollection" placeholder="Insert SKU">
+                    <button>Salve</button>
+                </form>
+            </div>
+                <form action="">
+                    <Label>Select Collection</Label>
+                    <select name="collection" id="collection">
+                        <option value="">Collection 1</option>
+                        <option value="">Collection 2</option>
+                        <option value="">Collection 3</option>
+                        <option value="">Collection 4</option>
+                    </select>
+                </form>
+            
+            <!--Nessa div deve-se preencher com informacoes especificas de cada colecao.Um formulario talvez?-->
+            <div id="biscuitsInformation">
+                <input placeholder="BPH"  type="text">
+                <input placeholder="TINS" type="text">
+                <input placeholder="BISCUITS" type="text">
+            </div>
+            <!--Div com uma lista de Icers - que seja um check box é preciso selecionar os nomes de quem ira fazer a colecao selecionada acima-->
+            <div id="icersSelection">
+                <select value="">
+                        <option value="1"> select icers</option>
+                        <option value="1"> Name 2</option>
+                        <option value="1"> Name 3</option>
+                        <option value="1"> Name 4</option>
+    
+                </select>
+                
+            </div>
+            <button type="submit">Submit Collection </button>
         </div>
-        <!--Div com uma lista de Icers - que seja um check box-->
-        <div id="icersSelection">Select Icers name</div>
-        <button type="submit">Submit Collection </button>
-</form>
+
 </body>
 </html>
